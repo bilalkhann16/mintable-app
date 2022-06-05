@@ -26,7 +26,7 @@ function makeAnEpicNFT() public{
     //mint the NFT to the sender of the transaction. using msg.sender
     _safeMint(msg.sender, newItemId);
     //set the NFT's data.
-    _setTokenURI(newItemId, "https://jsonkeeper.com/b/TPIG");
+    _setTokenURI(newItemId, "data:application/json;base64,eyJuYW1lIjoiTXkgRmlyc3QgRVBJQyBORlQiLCJkZXNjcmlwdGlvbiI6IkEgc2lsZW50IGhlcm8uIFR3aXR0ZXIgaXMgYSBncmVhdCBwbGFjZSB0byBsZWFybiBuZXcgc3R1ZmYuIiwiaW1hZ2UiOiJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSEJ5WlhObGNuWmxRWE53WldOMFVtRjBhVzg5SW5oTmFXNVpUV2x1SUcxbFpYUWlJSFpwWlhkQ2IzZzlJakFnTUNBek5UQWdNelV3SWo0S0lDQWdJRHh6ZEhsc1pUNHVZbUZ6WlNCN0lHWnBiR3c2SUhkb2FYUmxPeUJtYjI1MExXWmhiV2xzZVRvZ2MyVnlhV1k3SUdadmJuUXRjMmw2WlRvZ01UUndlRHNnZlR3dmMzUjViR1UrQ2lBZ0lDQThjbVZqZENCM2FXUjBhRDBpTVRBd0pTSWdhR1ZwWjJoMFBTSXhNREFsSWlCbWFXeHNQU0ppYkdGamF5SWdMejRLSUNBZ0lEeDBaWGgwSUhnOUlqVXdKU0lnZVQwaU5UQWxJaUJqYkdGemN6MGlZbUZ6WlNJZ1pHOXRhVzVoYm5RdFltRnpaV3hwYm1VOUltMXBaR1JzWlNJZ2RHVjRkQzFoYm1Ob2IzSTlJbTFwWkdSc1pTSStSWEJwWTB4dmNtUklZVzFpZFhKblpYSThMM1JsZUhRK0Nqd3ZjM1puUGdvPSIsInN0cmVuZ3RoTGV2ZWwiOjc4LCJiZXN0RnJpZW5kIjoiNDA0IE5vdCBGb3VuZCJ9");
     console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender);
     //increament the counter for when the next tokenId is needed. and next NFT is minted.
     _tokenIds.increment();
